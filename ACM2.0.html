@@ -1,0 +1,580 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style type="text/css">
+        
+        html,body{
+            height: 100%;
+            margin: 0px;
+            background-color: white;
+        }
+        
+        .nav-link{
+            
+            color: white !important;
+            font-size:20px;
+            
+        }
+        .mr-5{
+            margin-right: 13rem !important;
+        }
+        
+        .ml-5{
+            
+            margin-left: 13rem !important;
+        }
+        .container-fluid{
+            
+            height:100vh;
+        }
+        .rounded{
+            position: relative;
+            top: 12rem;
+        }
+        .container-fluid{
+            position: absolute;
+        }
+        h1{
+            font-size: 2.5rem;
+            font-weight: 300;
+            color: white;
+            font-family: inherit;
+        }
+        h2{
+            font-size:1.5rem;
+            font-weight: 300;
+            color: white;
+            font-family: inherit;
+        }
+        .container2{
+            background-color: white;
+            height: 100%;
+
+        }
+        h4{
+            color: black;
+            
+        }
+        
+        
+        
+        @media (max-width: 1126px) { 
+            
+            #navbar2{
+                
+                margin-right: 0rem !important;
+                
+                
+            }
+            #navbar1{
+                margin-left: 0rem !important;
+                float: left !important;
+                
+            }
+            
+        
+        }
+        
+        @media (max-width: 720px) {
+    
+                    
+        }
+        
+        .best{
+            border-radius: 20px;
+            padding: 10px;
+            font-size: 18px;
+            color: white;
+            background-image: linear-gradient(to right, #04AF6C , #0E32E0);
+            box-shadow: 0 4px 15px 0 rgba(116, 79, 168, 0.75);
+            
+        }
+        
+        
+        .About-ACM{
+            padding: 100px 0px;
+        }
+        .feature_text{
+            
+            box-sizing: border-box;
+        }
+        
+        .main-title{
+            padding-bottom: 20px;
+        }
+        
+        .main-title h2{
+            font-size: 40px;
+            line-height: 48px;
+            font-family: "Poppins", sans-serif;
+            color: #232d37;
+            font-weight: 500;
+        }
+        
+        .feature_text p{
+            
+            font-size: 14px;
+            color: #51545f;
+            font-family: "Poppins", sans-serif;
+            line-height: 26px;
+            padding-bottom: 12px;
+            
+        }
+        
+        .carousel-caption p{
+            font-size: 18px;
+        }
+        
+        .logos{
+            text-align: center;
+            margin: 0rem 18rem;
+        }
+        
+        .fa {
+          padding: 20px;
+          font-size: 30px;
+          width: 100px;
+          text-align: center;
+          text-decoration: none;
+          margin: 5px 2px;
+        }
+       
+            
+        
+        .fa-facebook {
+          background: #212529;
+          color: white;
+        }
+        
+        .fa-facebook:hover{
+            background:#4267B2;
+            color: white;
+            text-decoration: none;
+        }
+        
+        .fa-linkedin {
+          background: #212529;
+          color: white;
+          
+        }
+        .fa-linkedin:hover{
+            background: #0077B5;
+            color: white;
+            text-decoration: none;
+        }
+        .icon{
+            margin: 1rem 2rem;
+            
+        }
+        .iconify:hover{ 
+            
+            color:#0182AC;
+        }
+        
+        
+         @media (max-width: 1199px) {
+            
+             .logos{
+                 margin: 0rem 11rem;
+             }
+                    
+        }
+         @media (max-width: 990px) {
+            
+             .logos{
+                 margin: 0rem 7rem;
+             }
+                    
+        }
+         @media (max-width: 767px) {
+            
+             .logos{
+                 margin: 0rem 0.5rem;
+                 
+             }
+             
+             .event-box img{
+                 float: right;
+             }
+                    
+        }
+        
+        .events{
+            box-sizing: border-box;
+            text-align: center;
+        }
+        
+        .event-box h2{
+            font-size: 40px;
+            font-family: "Poppins", sans-serif;
+            font-weight: 500;
+            color:#232d37;
+        }
+        
+        .event-box p{
+            font-size: 16px;
+            font-family: "Poppins", sans-serif;
+            line-height: 26px;
+            padding-top: 10px;
+            color: #51545f;
+            margin-left: 2rem;
+            
+        }
+        
+        .event-box img{
+            max-height:90px;
+        }
+        
+        .card:hover{
+             box-shadow: 0 4px 15px 0 rgba(116, 79, 168, 0.75);
+        }
+        
+        .news1 h4{
+            font-size: 18px;
+            color:#232d37;
+            font-family: "Poppins", sans-serif;
+            font-weight: 550;
+            transition: all 400ms
+                linear 0s;
+            text-align: center;
+        }
+        
+        .news1 h4:hover{
+            color: #00FF7F;
+        }
+        
+        .news1 p{
+            font-size: 14px;
+            line-height: 26px;
+            color: #51545f;
+            font-family: "Poppins", sans-serif;
+            font-weight: 400;
+            padding: 15px 0px 10px 0px;
+        }
+                
+        .news2 h4{
+            font-size: 18px;
+            color:#232d37;
+            font-family: "Poppins", sans-serif;
+            font-weight: 550;
+            transition: all 400ms
+                linear 0s;
+            text-align: center;
+        }
+        .news2 h4:hover{
+            color: #00FF7F;
+        }
+        
+        .news2 p{
+            font-size: 14px;
+            line-height: 26px;
+            color: #51545f;
+            font-family: "Poppins", sans-serif;
+            font-weight: 400;
+            padding: 15px 0px 10px 0px;
+        }
+        
+        .news3 h4{
+            font-size: 18px;
+            color: #232d37;
+            font-family: "Poppins", sans-serif;
+            font-weight: 550;
+            transition: all 400ms
+                linear 0s;
+            text-align: center;
+        }
+        .news3 h4:hover{
+            color: #00FF7F;
+        }
+        
+        .news3 p{
+            font-size: 14px;
+            line-height: 26px;
+            color: #51545f;
+            font-family: "Poppins", sans-serif;
+            font-weight: 400;
+            padding: 15px 0px 10px 0px;
+        }
+        
+        @media (min-width: 1024px){
+          .news{
+            margin: 0rem 2rem;
+            padding-left: 3.5rem;
+          }
+        
+        }
+        
+        
+        
+        
+
+       
+        
+      
+    </style>
+    <title>ACM</title>
+  </head>
+  <body>
+      <!-- Navbar!-->
+      <nav id="navbar" class="navbar navbar-dark navbar-expand-md fixed-top">
+        <a id="navbar1" class="navbar-brand ml-5" href="https://muj.acm.org/"><img src="https://muj.acm.org/static\img\heap\logo.png" height="50px"/></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span> 
+          </button> 
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Events</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">ELICIT</a>
+              </li>
+            </ul>
+              
+            
+            <ul class="navbar-nav mr-5" id="navbar2">
+              <li class="nav-item ">
+                <a class="nav-link" href="#">Membership<span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">ACM India Summit</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Team</a>
+              </li>
+            </ul>
+              
+          </div>
+      </nav>
+      <!-- display picture !-->
+      <div class="container-fluid rounded">
+          <div class="text-center">
+            <img src="https://muj.acm.org/static/img/heap/intro-logo-flat.png" alt="ACM MUJ">
+            <br>
+            <h1 style="margin-top: 15px; margin-bottom: 15px;">Manipal University Jaipur</h1>
+            <h2>Association for Computing Machinery</h2>
+            <h2>Student Chapter</h2>
+            <br>
+            <img src="https://muj.acm.org/static/img/Website_2019.png">
+          </div>
+          
+  
+      </div>
+    <!-- particle.js !-->
+    <div id="particles-js"></div>
+    <!-- information !-->
+    <div class="container-fluid container2">
+    
+    <!-- About acm and logos !-->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3"></div>
+        <div class="col-md-6">
+            <br>
+            <br>
+          <h4 class="best">MUJ ACM chapter is the Second best ACM chapter</h4>
+
+        </div>
+      </div>
+      <!-- info about acm !-->
+     <div class="About-ACM">
+      
+      <div class="row">
+          <div class="col-lg-6">
+              
+              <div class="feature_text">
+                  
+                  <div class="main-title">
+                      <h2>
+                          What is ACM?
+                          <br>
+                      
+                      </h2>
+                  
+                  </div>
+                  <p>
+                      ACM, the Association for Computing Machinery founded in New York on September 15, 1947, is the world’s largest educational and scientific society connecting and convening the researchers, educators and professionals to apportion resources, inspire discourse and scrutinize and address the field’s challenges.
+                  
+                  
+                  </p>
+                  <p>
+                      ACM’s reach extends to every part of the globe, with more than half of its 100,000 members residing outside the U.S. Manipal University Jaipur ACM Chapter was officially chartered by ACM's Chief Operating Officer on December 14, 2015.
+                  
+                  </p>
+              
+              
+              </div>
+          
+          </div>
+          
+          <!-- carousel !-->
+          <div class="col-lg-6">
+              
+              <div class="feature-image">
+                  <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img class="d-block w-100" src="https://muj.acm.org/static/img/slider/banner1.png">
+                          <div class="carousel-caption">
+                              <p>MUJ-ACM Chapter is the Second best ACM chapter</p>
+                          </div>
+                        </div>
+                      </div>
+                      <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                      </a>
+                      <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                      </a>
+                 </div>
+              
+              
+              </div>
+          
+          
+          </div>
+      
+      </div>
+      <br>
+      <br>
+      <br>
+      
+      <!-- logos !-->
+      <div class="row">
+          <div class="logos">
+              
+              <a  onclick="window.open('http://www.acm.org/')" class="iconify icon" data-icon="simple-icons:acm" data-inline="false" data-width="90" data-height="90"></a>
+              
+              <a href="#" class="fa fa-facebook icon"></a>
+              
+              <a href="#" class="fa fa-linkedin icon"></a>
+            
+          
+          
+          
+          </div>
+      
+      
+      
+      </div>
+        
+  </div>      
+</div>
+<!-- events !-->
+<div class="events">
+    <div class="container event-box">
+        <div class="container event-title">
+            <div class="row">
+                <div class="col-md-10 col-xs-8 f1">
+                    
+                    <h2>Featured Events</h2>
+                    <p>What is the chapter upto?</p>
+                
+                </div>
+                <div class="col-md-2 col-xs-2">
+                    
+                    <img src="https://muj.acm.org/static/img/news.png">
+                
+                </div>
+            
+            
+            </div>
+        
+        </div>
+
+     </div>
+   </div>
+    <br>
+    <br>    
+        
+   <div id="container">
+       <div class="row row-cols-1 row-cols-md-3 news">
+  <div class="col mb-4">
+    <div class="card news1">
+      <img src="https://muj.acm.org/static/img/events/cloudfest.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h4 class="card-title">Elicit Unveiling</h4>
+        <p class="card-text">At the unique intersection of innovation and creativity, students were given the chance to explore the ever-expanding domain of cloud computing with Google Cloud Study Jams. The details regarding the event were revealed to the students on 19th August 2019 at the Elicit 3.0 Unveiling by Tushar Sadana and Aashis Kumar.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col mb-4">
+    <div class="card news2">
+      <img src="https://muj.acm.org/static/img/events/2.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h4 class="card-title">Codeathon</h4>
+        <p class="card-text">Similar to a marathon, codeathon is an event where participants code to solve real-life problems in a well-defined time limit. Though the introduction seems easy, the event was quite challenging yet exciting. The event was held on 20th September'19 by MUJ ACM SCHAP. It saw massive participation from students of all years eager to showcase, introspect, and learn about their coding skills</p>
+      </div>
+    </div>
+  </div>
+  <div class="col mb-4">
+    <div class="card news3">
+      <img src="https://muj.acm.org/static/img/events/3.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h4 class="card-title">Coding Ninja Workshop</h4>
+        <p class="card-text">In the workshop taken by Mr. Arpan Garg, from Coding Ninjas, which saw a participation of 235 students on 24th August'19, the students were presented with an opportunity to find out where they stand in this ever so competitive world of Tech.</p>
+      </div>
+    </div>
+  </div>
+  
+</div>        
+   </div>
+    
+</div> 
+      
+      
+        
+    
+       
+      
+      
+      
+      
+      
+      
+      
+      
+      <script type="text/javascript">
+          
+          $(window).on('scroll',function(){
+              var scrollTop=$(window).scrollTop();
+              if(scrollTop > 0){
+                  $("#navbar").addClass('bg-dark');
+              }
+              
+              else{
+                  $("#navbar").removeClass('bg-dark');
+              }
+          });
+          
+         
+          
+      
+      
+      
+      
+      </script>
+      
+    <script type="text/javascript" src="particles.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    
+  </body>
+</html>
