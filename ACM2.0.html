@@ -9,6 +9,9 @@
     <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
     <style type="text/css">
         
         html,body{
@@ -17,7 +20,9 @@
             background-color: white;
         }
         
-        .nav-link{
+        /* Navbar CSS */
+        
+        .nav-link{   
             
             color: white !important;
             font-size:20px;
@@ -27,7 +32,7 @@
         
         .nav-link:hover{
             
-            transform: scale(1.1);
+            transform: scale(1.02);
         }
         .mr-5{
             margin-right: 13rem !important;
@@ -45,6 +50,8 @@
         #navbar1 img:hover{
             transform:rotateY(360deg);
         }
+        
+        /* Display picture CSS */
         .container-fluid{
             
             height:100vh;
@@ -79,45 +86,23 @@
         }
         
         
-        
-        @media (max-width: 1126px) { 
-            
-            #navbar2{
-                
-                margin-right: 0rem !important;
-                
-                
-            }
-            #navbar1{
-                margin-left: 0rem !important;
-                float: left !important;
-                
-            }
-            
-        
-        }
-        
-        @media (max-width: 720px) {
-    
-                    
-        }
-        
+        /* Acm muj best CSS*/
+       
         .best{
             border-radius: 20px;
             padding: 10px;
             padding-left: 56px;
             font-size: 18px;
-            color: white;
+            color:white;
             background-image: linear-gradient(to right, #04AF6C , #0E32E0);
             box-shadow: 0 4px 15px 0 rgba(116, 79, 168, 0.75);
             
             
+            
         }
         
-        
-        
-    
-        
+        /*about ACM CSS */
+
         .About-ACM{
             padding: 100px 0px;
         }
@@ -148,10 +133,13 @@
             
         }
         
+        /*carousel CSS */
+        
         .carousel-caption p{
             font-size: 18px;
         }
         
+        /* logos CSS */
         .logos{
             text-align: center;
             margin: 0rem 18rem;
@@ -202,32 +190,9 @@
         }
         
         
-         @media (max-width: 1199px) {
-            
-             .logos{
-                 margin: 0rem 11rem;
-             }
-                    
-        }
-         @media (max-width: 990px) {
-            
-             .logos{
-                 margin: 0rem 7rem;
-             }
-                    
-        }
-         @media (max-width: 767px) {
-            
-             .logos{
-                 margin: 0rem 0.5rem;
-                 
-             }
-             
-             .event-box img{
-                 float: right;
-             }
-                    
-        }
+
+        
+       /*event box CSS */
         
         .events{
             box-sizing: border-box;
@@ -247,13 +212,15 @@
             line-height: 26px;
             padding-top: 10px;
             color: #51545f;
-            m
+            
             
         }
         
         .event-box img{
             max-height:90px;
         }
+        
+        /* NEWS CSS */
         
         .card:hover{
              box-shadow: 0 4px 15px 0 rgba(116, 79, 168, 0.75);
@@ -326,6 +293,9 @@
             padding: 15px 0px 10px 0px;
         }
         
+        
+        /* media queries */
+        
         @media (min-width: 1024px){
           .news{
             margin: 0rem 2rem;
@@ -333,6 +303,67 @@
           }
         
         }
+         @media (max-width: 1126px) { 
+            
+            #navbar2{
+                
+                margin-right: 0rem !important;
+                
+                
+            }
+            #navbar1{
+                margin-left: 0rem !important;
+                float: left !important;
+                
+            }
+            
+        
+        }
+        
+         @media (max-width: 991px){
+            
+            .best{
+                padding-left:1rem;
+                
+            }
+        }
+        
+        @media (max-width: 767px){
+            
+            .best{
+                padding-left:3rem;
+                
+            }
+        }
+        
+                 @media (max-width: 1199px) {
+            
+             .logos{
+                 margin: 0rem 11rem;
+             }
+                    
+        }
+         @media (max-width: 990px) {
+            
+             .logos{
+                 margin: 0rem 7rem;
+             }
+                    
+        }
+         @media (max-width: 767px) {
+            
+             .logos{
+                 margin: 0rem 0.5rem;
+                 
+             }
+             
+             .event-box img{
+                 float: right;
+             }
+                    
+        }
+       
+     
         
         
         
@@ -407,7 +438,7 @@
         <div class="col-md-6">
             <br>
             <br>
-          <h4 class="best">MUJ ACM chapter is the Second best ACM chapter</h4>
+            <h4 class="best animate__animated animate__flipInX animate__infinite animate__slower">MUJ ACM chapter is the Second best ACM chapter</h4>
 
         </div>
       </div>
@@ -523,7 +554,7 @@
    </div>
     <br>
     <br>    
-        
+   <!-- NEWS !-->
    <div id="container">
        <div class="row row-cols-1 row-cols-md-3 news">
   <div class="col mb-4">
@@ -568,12 +599,13 @@
       
       
       
-      
-      
+
       
       <script type="text/javascript">
-          
-          $(window).on('scroll',function(){
+        
+        //navbar background change
+        
+         $(window).on('scroll',function(){
               var scrollTop=$(window).scrollTop();
               if(scrollTop > 0){
                   $("#navbar").addClass('bg-dark');
@@ -583,6 +615,7 @@
                   $("#navbar").removeClass('bg-dark');
               }
           });
+          
           
          
           
